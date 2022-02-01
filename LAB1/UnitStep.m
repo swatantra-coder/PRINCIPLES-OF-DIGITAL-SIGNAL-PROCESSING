@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+N=input('Number of Sample');
+t1=-N:1:N-1;
+x1=[zeros(1,N),1,ones(1,N-1)];
+stem(t1,x1);
+xlabel('Time');
+ylabel('Amplitude');
+title('Unit step signal');
