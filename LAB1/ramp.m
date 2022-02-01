@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+N=input('Number of Sample');
+t1=-N:1:N;
+x1=[zeros(1,N),0,1:N];
+stem(t1,x1);
+xlabel('Time');
+ylabel('Amplitude');
+title('Ramp signal');
