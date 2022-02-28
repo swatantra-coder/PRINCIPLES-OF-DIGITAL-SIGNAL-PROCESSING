@@ -11,8 +11,11 @@ for k=0:N-1
     end
 end
 toc
+
 %x1=input("Enter the second sequence: ");
-Y=fft(X)
+tic
+Y=fft(x)
+toc
 t=0:N-1;
 
 subplot(312)
