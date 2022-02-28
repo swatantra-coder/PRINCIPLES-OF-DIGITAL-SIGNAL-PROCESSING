@@ -10,4 +10,11 @@ for k=0:N-1
     end
 end
 %x1=input("Enter the second sequence: ");
-Y=fft(X);
+Y=fft(X)
+t=0:N-1;
+
+subplot(312)
+stem(t,abs(Y))
+xlabel('Frequency');
+ylabel('|Y(k)|');
+title('Freqency Domain- Magnitude response')
